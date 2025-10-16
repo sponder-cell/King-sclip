@@ -37,30 +37,34 @@ function App() {
   const showNav = () => {
     showRef.current.classList.toggle('responsive');
   }
+
+  const closeNav = () => {
+    showRef.current.classList.remove('responsive')
+  }
   return (
     <>
     <section id='home'>
           <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li className='logo'><a href="#home">King's</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#testimonial">Testimonial</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" onClick={closeNav}>Home</a></li>
+        <li><a href="#about" onClick={closeNav}>About</a></li>
+        <li><a href="#services" onClick={closeNav}>Services</a></li>
+        <li className='logo'><a href="#home" onClick={closeNav}>King's</a></li>
+        <li><a href="#gallery" onClick={closeNav}>Gallery</a></li>
+        <li><a href="#testimonial" onClick={closeNav}>Testimonial</a></li>
+        <li><a href="#contact" onClick={closeNav}>Contact</a></li>
       </ul>
     </nav>
 
         <nav className='drop-down'>
           <label htmlFor="" className="logo">King's Clip</label>
       <ul ref={showRef}>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#testimonial">Testimonial</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" onClick={closeNav}>Home</a></li>
+        <li><a href="#about" onClick={closeNav}>About</a></li>
+        <li><a href="#services" onClick={closeNav}>Services</a></li>
+        <li><a href="#gallery" onClick={closeNav}>Gallery</a></li>
+        <li><a href="#testimonial" onClick={closeNav}>Testimonial</a></li>
+        <li><a href="#contact" onClick={closeNav}>Contact</a></li>
       </ul>
       <IoIosMenu onClick={showNav} className='menu'/>
     </nav>

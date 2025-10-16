@@ -31,10 +31,14 @@ nav ul li a:hover{
 .drop-down{
     display: none;
     position: relative;
+    z-index: 1000;
 }
 .drop-down ul{
     float: right;
     margin-right: 30px;
+}
+.drop-down ul li a{
+    cursor: pointer;
 }
 .drop-down .logo{
     margin-left: 10px;
@@ -564,6 +568,7 @@ input{
 @media screen and (max-width:1024px) {
     nav{
         display: none;
+        background: local;
     }
     .drop-down{
         display: block;
