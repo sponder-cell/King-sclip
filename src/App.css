@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=UnifrakturMaguntia&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.logo{
+    font-size: 3.5rem;
+    line-height: 80px;
+}
+nav{
+  font-family: "Bebas Neue", sans-serif;
+}
+nav ul{
+    margin-left: 70px;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 80px;
+    line-height: 80px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.drop-down{
+    display: none;
+    position: relative;
+}
+.drop-down ul{
+    float: right;
+    margin-right: 30px;
+}
+.drop-down .logo{
+    margin-left: 10px;
+}
+.menu{
+    font-size: 70px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    margin-top: 10px;
+    
+}
+
+#home{
+    background-image: url(/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.home-intro{
+    padding: 150px 20px;
+    text-align: center;
+}
+.home-intro h1{
+    font-size: 3rem;
+    margin: 5px 0;
+      /* font-family: "Bebas Neue", sans-serif; */
+      font-family: "UnifrakturMaguntia", cursive;
+
+}
+.home-intro h4{
+    font-family: "ubuntu";
+}
+.home-intro button{
+    font-size: 1.2rem;
+    background: transparent;
+    border: solid thin goldenrod;
+    color: white;
+    padding: 10px;
+    font-family: "UnifrakturMaguntia", cursive;
+}
+.socials div{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.socials{
+          font-family: "Bebas Neue", sans-serif;
+
+}
+
+.icons{
+    font-size: 20px;
+    color: goldenrod;
+}
+
+.more{
+    padding-left: 160px;
+    text-align: center;
+    font-weight: lighter;
+    animation: bounce 1.5s ease-in-out infinite ;
+}
+
+/* About Section */
+#about{
+    padding: 30px;
+    color: white;
+    background-color: black;
+    font-family: "Bebas Neue", sans-serif;
+    transition: 0.5s ease-in;
+}
+.about-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.about-img img{
+    width:500px
+}
+.about-img{
+    width: 100%;
+}
+
+.about-text{
+    margin-top: 20px;
+}
+.about-text p{
+    font-size: 1.1rem;
+}
+.about-text h3{
+    font-size: 2.5rem;
+        font-family: "UnifrakturMaguntia", cursive;
+        padding-bottom: 30px;
+
+}
+.about-text button{
+        font-size: 1.2rem;
+    background: transparent;
+    border: solid thin goldenrod;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: "UnifrakturMaguntia", cursive;
+
+}
+
+
+/* Services Section */
+
+#services{
+    padding: 70px;
+    background-image: url(/services.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.services-intro{
+    padding-bottom: 20px;
+}
+.services-intro h3{
+    font-size: 2.5rem;
+            font-family: "UnifrakturMaguntia", cursive;
+
+}
+.services-info{  
+
+}
+.info{
+    text-align: left;
+              font-family: "montserrat", sans-serif;
+
+}
+.info p{
+}
+.services-info div{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.price{
+    margin-left: 150px;
+}
+.price p{
+    font-weight: bolder;
+}
+.services-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+}
+.service-button{
+    text-align: center;
+    padding-top:30px ;
+}
+
+.service-button button{
+    font-size: 1.2rem;
+            font-family: "UnifrakturMaguntia", cursive;
+            padding: 10px;
+            border: solid goldenrod thin;
+            background: transparent;
+}
+#gallery{
+    text-align: center;
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+.gallery-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.gallery-img{
+    width:420px;
+}
+.gallery-intro h3{
+    padding-bottom: 30px;
+            font-family: "UnifrakturMaguntia", cursive;
+            font-size: 2.5rem;
+}
+.gallery-button{
+    padding-top: 20px;
+}
+.gallery-button button{
+        font-size: 1.2rem;
+            font-family: "UnifrakturMaguntia", cursive;
+            padding: 10px;
+            border: solid goldenrod thin;
+            background: transparent;
+            color: white;
+
+}
+
+
+
+/* Testimonial section */
+
+#testimonial{
+    text-align: center;
+    background-color: lightgray;
+            font-family: "Bebas Neue", sans-serif;
+
+}
+.testimonial-intro{
+    padding-top: 30px;
+}
+.testimonial-intro h3{
+    font-size: 2.5rem;
+                font-family: "UnifrakturMaguntia", cursive;
+
+    
+}
+.testimonial-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+        padding: 70px 100px;
+
+}
+.testimonial-card{
+    border: solid thin;
+    padding: 70px 50px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+.testimonial-card:hover{
+    transform: translateY(-10px);
+}
+.profile{
+    font-size: 30px;
+}
+.testimonial-card div{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.star{
+    padding: 10px 0;
+}
+.quote{
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.experience{
+    padding-bottom: 10px;
+}
+.experience div{
+    display: inline-block;
+    margin: 0 30px;
+}
+.experience div h4{
+    font-size: 2.5rem;
+    font-weight:bolder;
+        font-family: "Bebas Neue", sans-serif;
+
+    
+}
+.experience div p{
+    color: #808080;
+}
+
+/* Team Section */
+
+#team{
+    text-align: center;
+    padding: 50px 30px;
+    background-color: black;
+    color: white;
+}
+.team-intro{
+    text-align: left;
+    padding: 30px 0;
+}
+.team-intro{
+    font-size: 2.5rem;
+                    font-family: "UnifrakturMaguntia", cursive;
+
+}
+.team-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: solid thin;
+    border-color: goldenrod;
+
+}
+.team-card{
+        position: relative;
+
+}
+.img-div{
+    width:100%;
+}
+.image-content{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    right: 38%;
+}
+.image-content h4{
+    color: goldenrod;
+    font-size: 1.5rem;
+}
+.team-img{
+    width: 420px;
+}
+
+/* contact section */
+
+.div-icon{
+    float: left;
+        padding-right: 20px;
+
+}
+.fa-icon{
+    font-size: 30px;
+    color: goldenrod;
+}
+#contact{
+    padding: 70px;
+    background-color: black;
+    color: white;
+}
+.contact-info h3{
+    padding-bottom: 30px;
+    font-size: 2.5rem;
+    color: white;
+                        font-family: "UnifrakturMaguntia", cursive;
+
+}
+.contact{
+    margin-bottom: 20px;
+}
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+iframe{
+    width:400px;
+    height: 300px;
+    background: black;
+}
+.contact-icon-info{
+    margin-left: 10px;
+}
+table{
+    border-collapse: collapse;
+    margin-right: 50px;
+}
+td{
+    padding: 0 70px;
+    border-bottom: solid 1px;
+    text-align: right;
+}
+.contact i{
+    color: #808080;
+    font: 0.8rem;
+}
+.social-media{
+    margin-top: 20px;
+}
+.social-media p{
+    display: inline-block;
+}
+.social-media-icons{
+    font-size: 20px;
+    margin-right: 20px;
+    color: #808080;
+}
+.social-media-icons:hover{
+    color: white;
+}
+hr{
+    color: goldenrod;
+}
+.contact-form{
+    text-align: center;
+    padding: 30px 100px;
+    background-image: url(/contact-back.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+.contact-form h3{
+    font-size: 2.5rem;
+    font-family: "UnifrakturMaguntia", cursive;
+}
+.form{
+    text-align: left;
+    padding: 0 200px;
+}
+textarea{
+    padding: 10px;
+    width:100%;
+        background-color:#808080;
+    border: none;
+
+}
+label{
+    margin-bottom: 10px;
+}
+.email-phone div{
+    display: inline-block;
+    width:48.5%;
+    
+}
+.submit{
+    margin-top: 10px;
+    color: white;
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    border: solid 1px goldenrod;
+}
+.phone{
+    margin-left: 20px;
+}
+input{
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color:#808080;
+    border: none;
+}
+
+.footer {
+  background-color: #0d0d0d;
+  color: #f1f1f1;
+  padding: 60px 20px 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-logo h2 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 10px;
+    font-family: "UnifrakturMaguntia", cursive;
+}
+
+.footer-logo span {
+  color: #c59d5f; /* golden accent */
+}
+
+.footer-logo p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.footer-links, .footer-contact {
+  min-width: 200px;
+}
+
+.footer-links h3, .footer-contact h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #c59d5f;
+}
+
+.footer-contact p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 6px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #222;
+  padding-top: 15px;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-15px);
+    }
+    
+}
+.down{
+    font-size: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.down-link{
+    color: white;
+    transition: all 1.5s ease-in;
+
+}
+@media screen and (max-width:1024px) {
+    nav{
+        display: none;
+    }
+    .drop-down{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width:100%;
+        /* height: 100vh; */
+        text-align: center;
+        margin: auto;
+        background-color: lightgray;
+        transform: translatey(-1000px);
+        transition: all 0.4s ease-in-out;
+
+    }
+    nav ul li{
+        display: block;
+        line-height: 60px;
+        border-bottom: solid thin white;
+    }
+    ul.responsive{
+        transform: translateY(0);
+    }
+
+    .home-social-info{
+        opacity: 0;
+    
+    }
+    #about{
+    padding: 10px;
+}
+.about-grid{
+    display: block;
+}
+.about-text{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.about-img img{
+    width:100vw;
+}
+.services-info div{
+    margin-bottom: 20px;
+}
+.services-grid{
+    display: block;
+    text-align: center;
+}
+.gallery-grid{
+    display: block;
+}
+.gallery-grid div{
+    margin-bottom: 15px;
+}
+.team-grid{
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: solid thin;
+    border-color: goldenrod;
+
+}
+.testimonial-grid{
+    display: block;
+    padding: 30px;
+}
+.testimonial-card{
+    margin-bottom: 15px;
+}
+.team-card{
+    margin-bottom: 15px;
+}
+.experience div{
+    display: block;
+    margin: 15px 30px;
+
+}
+#contact{
+    text-align: center;
+    padding:30px;
+}
+.contact-grid{
+    display: block;
+}
+.contact-grid div{
+    margin-bottom: 15px;
+}
+table{
+    margin-top: 30px;
+}
+iframe{
+    width:100%;
+    margin-top: 40px;
+
+}
+.contact-form{
+    text-align: center;
+    padding: 30px;
+    background-image: url(/contact-back.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+.form{
+    text-align: left;
+    padding: 0 ;
+}
+.email-phone div{
+    display: block;
+    width:initial;
+    
+}
+.phone{
+    margin-left: auto;
+}
+
+
+
+}
